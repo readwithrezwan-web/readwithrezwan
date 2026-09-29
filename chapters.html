@@ -1,23 +1,226 @@
-<h1>Computer Applications</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="chapter">
-    <h2>First Chapter</h2>
-    <a href="Computer%20Application%201.pdf" target="_blank">
-        Open Chapter 1
-    </a>
-</div>
+    <title>Computer Applications | Read With Rezwan</title>
 
-<div class="chapter">
-    <h2>Second Chapter</h2>
-    <p>Coming Soon</p>
-</div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<div class="chapter">
-    <h2>Third Chapter</h2>
-    <p>Coming Soon</p>
-</div>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4ff;
+            color: #1e293b;
+            min-height: 100vh;
+        }
 
-<div class="chapter">
-    <h2>Fourth Chapter</h2>
-    <p>Coming Soon</p>
-</div>
+        header {
+            background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+            border-radius: 0 0 25px 25px;
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        header h1 {
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 28px auto;
+            padding: 0 16px;
+        }
+
+        .section-title {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        .chapter-card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 16px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .chapter-info {
+            flex: 1;
+        }
+
+        .chapter-number {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .chapter-card h2 {
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .chapter-card p {
+            color: #64748b;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .chapter-icon {
+            font-size: 28px;
+        }
+
+        .open-btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 11px 14px;
+            border-radius: 9px;
+            font-size: 13px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .open-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .coming-soon {
+            display: inline-block;
+            background: #f1f5f9;
+            color: #64748b;
+            padding: 9px 11px;
+            border-radius: 8px;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .home-btn {
+            display: block;
+            width: fit-content;
+            margin: 28px auto;
+            padding: 13px 24px;
+            background: #0f172a;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            font-size: 12px;
+        }
+
+        @media (max-width: 380px) {
+            .chapter-card {
+                padding: 15px 12px;
+            }
+
+            .chapter-card h2 {
+                font-size: 15px;
+            }
+
+            .open-btn {
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="icon">🎓</div>
+        <h1>Computer Applications</h1>
+        <p>Your Study Notes, All in One Place</p>
+    </header>
+
+    <main class="container">
+
+        <h2 class="section-title">📚 Course Chapters</h2>
+
+        <div class="chapter-card">
+            <div class="chapter-info">
+                <div class="chapter-number">CHAPTER 01</div>
+                <h2>First Chapter</h2>
+                <p>Study notes in PDF format.</p>
+            </div>
+
+            <a class="open-btn"
+               href="Computer%20Application%201.pdf"
+               target="_blank"
+               rel="noopener">
+                Open PDF
+            </a>
+        </div>
+
+        <div class="chapter-card">
+            <div class="chapter-info">
+                <div class="chapter-number">CHAPTER 02</div>
+                <h2>Second Chapter</h2>
+                <p>Notes will be available soon.</p>
+            </div>
+
+            <span class="coming-soon">Coming Soon</span>
+        </div>
+
+        <div class="chapter-card">
+            <div class="chapter-info">
+                <div class="chapter-number">CHAPTER 03</div>
+                <h2>Third Chapter</h2>
+                <p>Notes will be available soon.</p>
+            </div>
+
+            <span class="coming-soon">Coming Soon</span>
+        </div>
+
+        <div class="chapter-card">
+            <div class="chapter-info">
+                <div class="chapter-number">CHAPTER 04</div>
+                <h2>Fourth Chapter</h2>
+                <p>Notes will be available soon.</p>
+            </div>
+
+            <span class="coming-soon">Coming Soon</span>
+        </div>
+
+        <a href="index.html" class="home-btn">
+            &#8592; Back to Home
+        </a>
+
+    </main>
+
+    <footer>
+        &copy; Read With Rezwan | Keep Learning
+    </footer>
+
+</body>
+</html>
