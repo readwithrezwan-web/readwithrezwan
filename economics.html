@@ -225,6 +225,21 @@
     <footer>
         &copy; Read With Rezwan | Keep Learning
     </footer>
+    <script>
+document.querySelectorAll('a[href$=".pdf"]').forEach(function(pdfLink) {
+    if (pdfLink.nextElementSibling &&
+        pdfLink.nextElementSibling.classList.contains('download-btn')) {
+        return;
+    }
 
+    const downloadBtn = document.createElement('a');
+    downloadBtn.href = pdfLink.href;
+    downloadBtn.download = '';
+    downloadBtn.className = 'open-btn download-btn';
+    downloadBtn.textContent = 'Download PDF';
+
+    pdfLink.insertAdjacentElement('afterend', downloadBtn);
+});
+</script>
 </body>
 </html>
